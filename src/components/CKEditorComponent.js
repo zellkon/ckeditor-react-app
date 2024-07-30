@@ -373,6 +373,7 @@ const CKEditorComponent = ({ value, onChange }) => {
 						<div ref={editorRef}>{isLayoutReady && <CKEditor editor={ClassicEditor} config={editorConfig} data={value} onChange={(event, editor) => {
                             const data = editor.getData();
                             onChange(data);
+                            console.log(data);
                         }}/>}</div>
 					</div>
 				</div>
